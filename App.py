@@ -147,13 +147,23 @@ def run():
                 st.subheader("**Resume Tips & Ideas💡**")
                 resume_score = 0
                 if 'Objective' in resume_text:
-                    resume_score = resume_score + 20
+                    resume_score = resume_score + 12
                     st.markdown(
                         '''<h4 style='text-align: left; color: #1ed760;'>[+] Awesome! You have added Objective</h4>''',
                         unsafe_allow_html=True)
                 else:
                     st.markdown(
                         '''<h4 style='text-align: left; color: #fabc10;'>[-] According to our recommendation please add your career objective, it will give your career intension to the Recruiters.</h4>''',
+                        unsafe_allow_html=True)
+
+                if 'Linkedin' or 'linkedin' in resume_text:
+                    resume_score = resume_score + 8
+                    st.markdown(
+                        '''<h4 style='text-align: left; color: #1ed760;'>[+] Awesome! You have added Linkedin Profile</h4>''',
+                        unsafe_allow_html=True)
+                else:
+                    st.markdown(
+                        '''<h4 style='text-align: left; color: #fabc10;'>[-] According to our recommendation please add your LinkedIn Profile, it will give your attention to the Recruiters.</h4>''',
                         unsafe_allow_html=True)
 
                 if 'CERTIFICATION' or 'Certification' in resume_text:
