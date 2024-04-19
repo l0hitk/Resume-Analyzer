@@ -22,7 +22,7 @@ This Python project aims to analyze resumes in PDF format using the PDFMiner lib
   streamlit run App.py
   ```
 - `Uploaded_Resumes` folder is contaning the user's uploaded resumes.
-- Admin side credentials is `machine_learning_hub` and password is `mlhub123`. 
+- Admin side credentials is `qwert123` and password is `147258369`. 
 
 ## Acknowledgements
 - The PyResparser library by Omkar Pathak for providing resume parsing capabilities.
